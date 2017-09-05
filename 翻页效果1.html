@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+		div{
+			width: 200px;
+			height: 200px;
+			margin: 50px;
+			font-size: 50px;
+			background-color: gold;
+			transition: all 500ms ease;
+			transform-style: preserve-3d;
+			transform: perspective(800px) rotateY(0deg);
+			backface-visibility: hidden;
+		}
+		body:hover div{
+			transform: perspective(800px) rotateY(180deg);		
+		}
+
+	</style>
+</head>
+<body>
+	<div>这是div元素</div>
+</body>
+</html>

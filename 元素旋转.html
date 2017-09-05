@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+		.box{
+			width: 200px;
+			height: 200px;
+			margin: 50px auto 0;
+			background-color: gold;
+			transition: all 2s ease;
+			transform-style: preserve-3d;
+			transform: perspective(800px) rotateX(0);
+		}
+		.box:hover{
+			/*沿着Z轴旋转*/
+			/*transform: rotate(45deg);*/
+			transform: perspective(800px) rotateZ(45deg);		
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>

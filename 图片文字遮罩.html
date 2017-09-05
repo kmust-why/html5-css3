@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+		.box{
+			width: 200px;
+			height: 300px;
+			margin: 50px auto 0;
+			border: 1px solid red;
+			position: relative;
+			overflow: hidden;
+		}
+		.box img{
+			width: 200px;
+			height: 300px;
+		}
+		.box .pic_info{
+			width: 200px;
+			height: 200px;
+			background-color: rgba(0,0,0,0.5);
+			color: #fff;
+			position: absolute;
+			left: 0;
+			top:300px;
+			transition: all 1s ease; 
+			/*transition:all 500ms cubic-bezier(0.750, -0.425, 0.055, 1.480);*/
+		}
+		.box:hover .pic_info{
+			top:150px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="images/location_bg.jpg" alt="">
+		<div class="pic_info">图片说明：风景画</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+		.box{
+			width: 200px;
+			height: 200px;
+			margin: 50px auto 0;
+			background-color: gold;
+			/*translate(x,y) 设置盒子位移*/
+			/*transform: translate(100px,100px);*/
+			/*rotate(deg) 设置盒子旋转*/
+			/*transform: rotate(30deg);*/
+			/*scale(x,y) 设置盒子缩放*/
+			/*transform: scale(0.5,0.8);*/
+			/*transform: skew(45deg,0);	*/
+			transition: all 1s ease;
+		}
+		.box:hover{
+			/*transform: translate(100px,100px);*/
+			/*transform: rotate(30deg);*/
+			/*transform: scale(0.5,0.8);*/
+			transform: skew(45deg,0)
+		}
+		.box1{
+			width: 200px;
+			height: 200px;
+			margin: 50px auto 0;
+			background-color: gold;
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box1"></div>
+</body>
+</html>

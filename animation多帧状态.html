@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>人物走路</title>
+	<style type="text/css" media="screen">
+		.box{
+			width: 100px;
+			height: 100px;
+			border: 1px solid black;
+			background-color: gold;
+			margin: 50px auto 0;
+			animation: walking 1s ease;
+		}
+		@keyframes walking{
+			0%{
+				transform: translateY(10px);
+			}
+			20%{
+				transform: translateY(10px);
+			}
+			50%{
+				transform: translateY(300px);
+				background-color: gold;
+			}
+			80%{
+				transform: translateY(0px);
+				background-color: red;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>
